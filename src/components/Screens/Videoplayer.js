@@ -23,9 +23,6 @@ export default class Videoplayer extends Component {
       }
     };
 
-    componentWillMount() { 
-    }
-  
     render() {
       let youtubeURL = this.props.navigation.getParam('youtubeURL');
       return (
@@ -35,16 +32,11 @@ export default class Videoplayer extends Component {
             style={{marginTop: (Platform.OS == 'ios') ? 20 : 0}}
             javaScriptEnabled={true}
             domStorageEnabled={true}
-            source={{uri: youtubeURL }} />
+            source={{uri: `https://${youtubeURL}` }} />
         </View>
       );
     }
   }
 
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-    },
-  });
 
   

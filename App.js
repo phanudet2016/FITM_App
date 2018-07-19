@@ -13,6 +13,7 @@ import LessonScreen from './src/components/Screens/Lesson'
 import PostsScreen from './src/components/Screens/Posts'
 import PdfViewScreen from './src/components/Screens/PdfView'
 import VideoplayerScreen from './src/components/Screens/Videoplayer'
+import SignoutScreen from './src/components/Screens/Signout'
 
 // import variablr
 import { displayName, photo, email } from './src/components/Login/LoginComponent'
@@ -103,6 +104,9 @@ let routeConfig = {
   },
   Profile: {
     screen: ProfileScreen
+  },
+  Signout: {
+    screen: SignoutScreen
   }
 };
 let drawerNavigatorConfig = {
