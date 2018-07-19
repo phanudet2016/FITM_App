@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "70705103923",
+    "firebase_url": "https://fitm-app.firebaseio.com",
+    "project_id": "fitm-app",
+    "storage_bucket": "fitm-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70705103923:android:addd7f977b0565ac",
+        "android_client_info": {
+          "package_name": "com.fitm_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70705103923-9907opd0caofo3h5g08sut7o7r60q2r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fitm_app",
+            "certificate_hash": "304cfe2dd57195b988bd89ca5839c2b1b6df7522"
+          }
+        },
+        {
+          "client_id": "70705103923-l6cnlsv70g1vtp8i7optutofph706vlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeqKOoBJBYhTClwE-eMu_MnqbxBULav50"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70705103923-l6cnlsv70g1vtp8i7optutofph706vlj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
