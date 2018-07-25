@@ -14,6 +14,8 @@ import PostsScreen from './src/components/Screens/Posts'
 import PdfViewScreen from './src/components/Screens/PdfView'
 import VideoplayerScreen from './src/components/Screens/Videoplayer'
 import SignoutScreen from './src/components/Screens/Signout'
+import ScoreScreen from './src/components/Screens/Score'
+import ListScoreScreen from './src/components/Screens/ListScore'
 
 // import variablr
 import { displayName, photo, email } from './src/components/Login/LoginComponent'
@@ -82,6 +84,9 @@ const AppStack = createStackNavigator(
     Lesson: {
       screen: LessonScreen,
     },
+    // ListScore: {
+    //   screen: ListScoreScreen,
+    // },
     Posts: {
       screen: PostsScreen,
     },
@@ -97,10 +102,24 @@ const AppStack = createStackNavigator(
   }
 );
 
+const AppStack2 = createStackNavigator(
+  {
+    ListScore: {
+      screen: ListScoreScreen,
+    },
+  },
+  {
+    headerMode: 'none'
+  }
+)
+
 // comfig DrawerNavigator
 let routeConfig = {
   Home: {
     screen: HomeScreen,
+  },
+  Score: {
+    screen: ScoreScreen
   },
   Profile: {
     screen: ProfileScreen
@@ -132,6 +151,7 @@ const App =  createSwitchNavigator(
   {
     App: AppDrawer,
     Stack: AppStack,
+    Stack2: AppStack2,
     Auth: Loign,
   },
   {

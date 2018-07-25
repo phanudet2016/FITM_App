@@ -61,73 +61,12 @@ export default class Profile extends Component {
         imageStyle 
       } = styles;
       return (
-      //   <View style={{ flex: 1, flexDirection: 'column'}}>
-      //   <HeaderBack {...this.props}/>
-      //   <View style={{ flex: 1, backgroundColor: '#fff',alignItems: 'center',justifyContent: 'center'}}>
-      //   <ListView
-      //       dataSource={this.state.dataSource}
-      //       renderRow={(rowData) => 
-      //         <View>
-      //           <Text onPress = {() => { this.props.navigation.navigate('Posts', {lesson: rowData.lesson})}}>{rowData.chapter}</Text>
-      //           <Text onPress = {() => { this.props.navigation.navigate('Posts', {lesson: rowData.lesson})}}>{rowData.posts}</Text>
-      //         </View>
-      //       }
-      //   />
-      //   </View>
-      // </View>
-      // <View style={{ height: 300 }}>
-      // <WebView
-      //               style={styles.WebViewContainer}
-      //               javaScriptEnabled={true}
-      //               domStorageEnabled={true}
-      //               source={{uri: 'https://www.youtube.com/embed/RhAFq7mvtDg' }}
-      //       />
-            
-      // </View>
-      // <ListView
-      //       dataSource={this.state.dataSource}
-      //       renderRow={(rowData) => 
-      //         <View>
-      //           <Text onPress = {() => { this.props.navigation.navigate('Posts', {lesson: rowData.lesson})}}>{rowData.chapter}</Text>
-      //           <Text onPress = {() => { this.props.navigation.navigate('Posts', {lesson: rowData.lesson})}}>{rowData.posts}</Text>
-      //         </View>
-      //       }
-      //   />
       <Container>
         <HeaderBack {...this.props}/>
         <Content>
-            {/* <CardItem>
-              <Left>
-                <Thumbnail source={{uri: 'Image URL'}} />
-                <Body>
-                  <Text>NativeBase</Text>
-                  <Text note>April 15, 2016</Text>
-                </Body>
-              </Left>
-            </CardItem>
-            <CardItem>
-              <Body>
-                <Image source={{uri: 'Image URL'}} style={{height: 200, width: 200, flex: 1}}/>
-                <Text>
-                  //Your text here
-                </Text>
-              </Body>
-            </CardItem>
-            <CardItem>
-              <Left>
-                <Button transparent textStyle={{color: '#87838B'}}>
-                  <Icon name="logo-github" />
-                  <Text>Open PDF</Text>
-                </Button>
-              </Left>
-            </CardItem> */}
             <ListView
               dataSource={this.state.dataSource}
               renderRow={(rowData) => 
-                // <View>
-                //   <Text onPress = {() => { this.props.navigation.navigate('Posts', {lesson: rowData.lesson})}}>{rowData.chapter}</Text>
-                //   <Text onPress = {() => { this.props.navigation.navigate('Posts', {lesson: rowData.lesson})}}>{rowData.posts}</Text>
-                // </View>
                 <Card>
                 <CardItem>
                   <Left>
@@ -143,9 +82,6 @@ export default class Profile extends Component {
                 <TouchableOpacity style={{height: 200}} onPress = {() => { this.props.navigation.navigate('Videoplayer', {youtubeURL: rowData.youtubeUrlEmbed})}}>
                   <Image source={{uri: `https://img.youtube.com/vi/${rowData.videoId}/0.jpg`}} style={{height: 200, width: imageWidth, flex: 1}}/>
                 </TouchableOpacity>
-                {/* <Text style={{paddingLeft:15}}>
-                  {rowData.posts}
-                </Text> */}
                 <Text style={{paddingLeft:15,paddingTop:5}}>
                   {rowData.posts}
                 </Text>

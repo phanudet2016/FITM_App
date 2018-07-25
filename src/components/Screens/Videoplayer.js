@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
-  Text,
   View,
-  Image,
-  Button,
-  TouchableHighlight,
   Platform
 } from 'react-native';
 import Header from '../Header/HeaderBackLesson'
